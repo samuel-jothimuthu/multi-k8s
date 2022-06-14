@@ -18,7 +18,7 @@ spec:
         - www.samjk8s.com
       secretName: samjk8s-com
   rules:
-    - host: k8s-multi.com
+    - host: samjk8s.com
       http:
         paths:
           - path: /?(.*)
@@ -41,7 +41,7 @@ spec:
                 name: server-cluster-ip-service
                 port:
                   number: 5000
-    - host: www.k8s-multi.com
+    - host: www.samjk8s.com
       http:
         paths:
           - path: /?(.*)
