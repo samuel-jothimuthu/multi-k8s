@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: samjk8s-com-tls
+spec:
+  secretName: samjk8s-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: samjk8s.com
+  dnsNames:
+    - samjk8s.com
+    - www.samjk8s.com
